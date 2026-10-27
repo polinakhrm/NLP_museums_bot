@@ -42,11 +42,13 @@ The following intents are used to recognize the main types of user requests:
 ## Entities
 
 The project uses both custom and system entities.
-Custom Entities
+
+### Custom Entities
+
 - `@museum` – identifies the supported museums and their alternative names.
 - `@interest` – identifies user interests.
 
-## System Entity
+### System Entities
 - `@sys.person` – extracts the user's name for conversation personalization.
 - `@sys.date` – identifies dates mentioned by the user for visit planning.
 - `@sys.time` – identifies time expressions used for museum recommendations and opening-hours queries.

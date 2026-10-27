@@ -26,7 +26,31 @@ The chatbot can:
 - remember conversational context for follow-up questions;
 - personalize the conversation using the user's name.
 
+## Intents
 
+The following intents are used to recognize the main types of user requests:
+- Default Welcome Intent – starts the conversation;
+- capture.name – captures the user's name;
+- museum.information – handles general questions about museums;
+- museum.recommendation – handles museum recommendations based on interests;
+- museum.recommendation_by_time – handles recommendations based on available time;
+- museum.practical_info – handles questions about opening hours, tickets and other practical information;
+- museum.comparison – handles comparisons between museums;
+- museum.contacts – provides museum contact information;
+- Default Negative Intent – provides negative training examples for intent recognition.
+
+## Entities
+
+The project uses both custom and system entities.
+Custom Entities
+- `@museum` – identifies the supported museums and their alternative names.
+- `@interest` – identifies user interests.
+
+## System Entity
+- `@sys.person` – extracts the user's name for conversation personalization.
+- `@sys.date` – identifies dates mentioned by the user for visit planning.
+- `@sys.time` – identifies time expressions used for museum recommendations and opening-hours queries.
+  
 ## Architecture
 
 The chatbot combines traditional Dialogflow CX functionality with generative AI.

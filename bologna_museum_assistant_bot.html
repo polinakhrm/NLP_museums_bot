@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bologna Museum Assistant</title>
+
+  <!-- Dialogflow Messenger -->
+<link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+<script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+</head>
+
+<df-messenger
+  location="eu"
+  project-id="bologna-museum-assistant"
+  agent-id="07723896-a998-46a2-9f90-a38c450065c6"
+  language-code="en"
+  max-query-length="-1">
+  <df-messenger-chat
+    chat-title="Bologna Museum Assistant">
+  </df-messenger-chat>
+</df-messenger>
+<style>
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      --df-messenger-font-family: Google Sans;
+      background: #eeeeee;
+      color: #1c1c1e;
+    }
+
+    /* Chat window */
+
+    df-messenger {
+      z-index: 999;
+
+      position: fixed;
+
+      bottom: 0;
+      right: 0;
+      top: 0;
+
+      width: 350px;
+
+      --df-messenger-message-user-font-color: #000000;
+      --df-messenger-message-bot-font-color: #e0dfdf;
+      --df-messenger-font-family: Google Sans;
+      --df-messenger-chat-background: #f1eeee;
+      --df-messenger-message-user-background: #c4c4c4;
+      --df-messenger-message-bot-background: #54423b;
+    }
+    
+    /* Left part of the page */
+
+    .main-content {
+      min-height: 100vh;
+      margin-right: 350px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px;
+    }
+
+    .intro {
+      max-width: 650px;
+    }
+
+    .icon {
+      font-size: 45px;
+      margin-bottom: 25px;
+    }
+
+    h1 {
+      margin: 0 0 20px;
+      font-size: 52px;
+      line-height: 1.05;
+      letter-spacing: -1.5px;
+    }
+
+    .description {
+      max-width: 550px;
+      margin: 0 0 30px;
+      font-size: 19px;
+      line-height: 1.6;
+      color: #636366;
+    }
+
+    .museums {
+      font-size: 14px;
+      line-height: 1.8;
+      color: #8e8e93;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Left side text -->
+
+  <main class="main-content">
+    <div class="intro">
+      <div class="icon">
+        🏛️
+      </div>
+
+      <h1>
+        Bologna<br>
+        Museum Assistant
+      </h1>
+
+      <p class="description">
+        Explore Bologna's museums with your virtual guide.
+        Share your goals, compare museums, check visitor
+        information and find the best museum for your interests.
+      </p>
+
+      <div class="museums">
+        MAMbo · Museo Morandi · Pinacoteca Nazionale<br>
+        Museo Civico Archeologico · Teatro Anatomico
+      </div>
+    </div>
+  </main>
+</body>
+</html>
